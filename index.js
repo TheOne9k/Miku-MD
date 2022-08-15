@@ -75,9 +75,9 @@ Miku.ev.on('groups.update', async pea => {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       Miku.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `${botname}`, wm_fatih, [])
+       Miku.send5ButImg(pea[0].id, `Group has been *Closed!* Only *Admins* can send Messages!`, `${botname}`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       Miku.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `${botname}`, wm_fatih, [])
+       Miku.send5ButImg(pea[0].id, `Group has been *Opened!* Now *Everyone* can send Messages!`, `${botname}`, wm_fatih, [])
        } else {
        Miku.send5ButImg(pea[0].id, `Group Subject has been updated to *${pea[0].subject}*`, `${botname}`, wm_fatih, [])
      }
